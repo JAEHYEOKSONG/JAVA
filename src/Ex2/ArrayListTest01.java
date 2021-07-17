@@ -6,6 +6,8 @@ import java.util.Scanner;
 public class ArrayListTest01 {
 
 	public static void main(String[] args) {
+		//구글 문제 찾아서 연습 
+		//성이 송씨인 사람만 찾아서 출력
 		Scanner input = new Scanner(System.in);
 		Scanner Humannum = new Scanner(System.in);
 		ArrayList<String> names = new ArrayList<>();
@@ -20,7 +22,7 @@ public class ArrayListTest01 {
 		ArrayList<String> namesfind = new ArrayList<>();
 		for(int i = 0; i< names.size(); i++) {
 			String namefindlist = names.get(i).substring(0,1);
-			if(namefindlist.equals("김")) {
+			if(namefindlist.equals("송")) {
 				namesfind.add(names.get(i));
 			}
 		}
