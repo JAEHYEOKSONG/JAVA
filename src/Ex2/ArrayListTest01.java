@@ -21,11 +21,11 @@ public class ArrayListTest01 {
 		
 		ArrayList<String> namesfind = new ArrayList<>();
 		for(int i = 0; i< names.size(); i++) {
-			String namefindlist = names.get(i).substring(0,1);
+			String namefindlist = names.get(i).substring(0,1); //substring은 문자 잘라줌
 			if(namefindlist.equals("송")) {
 				namesfind.add(names.get(i));
 			}
 		}
-		System.out.println(namesfind.toString());
+		System.out.println(namesfind.toString()); //toString은 재정의 해줌
 	}
 }
